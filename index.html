@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🚗 Fuel Efficiency & CO₂ Estimator</title>
+  <style>
+    body {
+      background: #f0f8ff;
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+      text-align: center;
+      padding: 30px;
+    }
+
+    h1 {
+      color: #2e8b57;
+      font-size: 2.5em;
+    }
+
+    form {
+      background-color: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      display: inline-block;
+      padding: 30px;
+      margin-top: 20px;
+    }
+
+    input {
+      padding: 10px;
+      margin: 10px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      width: 250px;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    .footer a {
+      color: #2e8b57;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🚗 Fuel Efficiency & 🌱 CO₂ Estimator</h1>
+  <p>Predict how efficient your vehicle is and its impact on the environment!</p>
+
+  <form action="/predict" method="post">
+    <input type="number" name="average_speed" placeholder="Avg Speed (km/h)" required><br>
+    <input type="number" name="petrol_used" placeholder="Petrol Used (litres)" required><br>
+    <input type="number" name="distance_covered" placeholder="Distance (km)" required><br>
+    <button type="submit">🔍 Predict</button>
+  </form>
+
+<div class="footer">
+    <a href="https://github.com/DhivyaSivakumar123" target="_blank">GitHub</a>
+</div>
+
+
+</body>
+</html>
